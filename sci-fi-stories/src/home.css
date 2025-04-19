@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    background-color: #0e0529;
+    color: #fff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  p {
+    margin-bottom: 16px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* Reset some browser defaults */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button, input {
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #9c6dff;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b490ff;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes twinkle {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Space-themed gradients */
+  .purple-gradient {
+    background: linear-gradient(135deg, #4a0072 0%, #9c6dff 100%);
+  }
+  
+  .dark-gradient {
+    background: linear-gradient(135deg, #0e0529 0%, #30176e 100%);
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px rgba(156, 109, 255, 0.7);
+  }
+  
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Add page transitions */
+  #root > div {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  /* Make images load smoothly */
+  img {
+    transition: opacity 0.3s ease;
+  }
+  
+  img.loading {
+    opacity: 0;
+  }
+  
+  img.loaded {
+    opacity: 1;
+  }
+  
